@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Services\" />
+    <None Remove="Services\Product\" />
+    <None Remove="Services\Dtos\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="Services\Product\" />
+    <Folder Include="Services\Dtos\" />
+  </ItemGroup>
+
+  <ItemGroup>
+      <ProjectReference Include="..\Pryaniky.Data\Pryaniky.Data.csproj" />
+  </ItemGroup>
+</Project>
